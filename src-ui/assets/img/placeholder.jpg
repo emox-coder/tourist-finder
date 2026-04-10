@@ -1,0 +1,16 @@
+<?php
+// Create a simple placeholder image
+header('Content-Type: image/jpeg');
+
+// Create image
+$img = imagecreate(300, 200);
+$bg = imagecolorallocate($img, 224, 224, 224); // Gray background
+$text_color = imagecolorallocate($img, 153, 153, 153); // Darker gray text
+
+// Add text
+imagestring($img, 3, 80, 90, "No Image Available", $text_color);
+
+// Output image
+imagejpeg($img);
+imagedestroy($img);
+?>

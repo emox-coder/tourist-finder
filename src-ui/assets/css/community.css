@@ -1,0 +1,856 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  background: #29432A;
+  color: #333;
+  height:auto;
+}
+
+
+.background {
+  background-image: url("../img/background-landing-page.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1400px; 
+  width: 100%;
+}
+
+/*header*/
+.container{
+  display:flex;
+  height:200px;
+ 
+  
+}
+.logo{
+  display:inline-block;
+
+}
+
+.logo img{
+  width:400px;
+}
+
+.search-home-container{
+  width:800px;
+}
+
+ul{
+  display:flex;
+  justify-content:center;
+  gap:60px;
+  width:100%;
+  margin-top:40px;
+  margin-left:0px;
+}
+
+ul a{
+  text-decoration:none;
+  font-size:20px;
+  color:#F2C94C;
+  transition: all 0.3s ease;
+}
+
+ul a:hover{
+ color: white;
+ transform:scale(1.05);
+
+}
+
+ul a.active {
+  color: white;
+  background: #2B662E;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.signin-button{
+  height:100px;
+  width:200px;
+  text-align:right;
+  padding-top:10px;
+  margin-right:200px;
+  padding-top:40px;
+  
+}
+
+.signin-button a{
+  background:#2B662E;
+  color:#F2C94C;
+  border:#F2994A solid 2px;
+  padding-left:25px;
+  padding-right:25px;
+  padding-bottom:10px;
+  padding-top:10px;
+  font-size:20px;
+  text-decoration:none;
+  border-radius:20px;
+  transition: all 0.3s ease;
+
+}
+
+.signin-button a:hover{
+   background: #F2C94C;             
+  color: #2B662E;                   
+  border-color: #F2C94C;            
+  transform: scale(1.05);  
+}
+/*header*/
+
+/*section-a*/
+.section-a{
+    display:flex;
+    justify-content:center;
+    text-align:center;
+    height:auto;
+   
+}
+
+.section-a h1{
+    color:#D1C07A;
+    font-size:80px;
+    text-shadow: 0px 3px 4px #000000;
+}
+
+.section-a p{
+    color:#FFFFFF;
+    font-size:30px;
+}
+
+.section-a a{
+    color:#EFA654;
+    background:#31442B;
+    border:#EFA654 solid 1px;
+    padding-right:20px;
+    padding-left:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+    font-size:20px;
+    border-radius:20px;
+   
+   
+}
+
+.join-the-community-button{
+    margin-top:20px;
+    transition:all 0.3s ease;
+   
+}
+
+.join-the-community-button:hover{
+    transform:scale(1.1);
+    
+}
+/*section-a*/
+
+/*section-b*/
+.section-b{
+  display:flex;
+  justify-content:center;
+  margin-top:100px;
+}
+
+.card-1{
+  background:#132A0D;
+  width:550px;
+  height:300px;
+  display:flex;
+  border-top-left-radius:150px;
+  border-bottom-left-radius:150px;
+  border-top-right-radius:50px;
+  border-bottom-right-radius:50px;
+  position:relative;
+}
+
+.card-1 img{
+  background-size:cover;
+  height:350px;
+  position:absolute;
+  bottom:1px;
+  right:350px
+}
+
+.card-1 a{
+  background:#31442B;
+  border:#EFA654 solid 2px;
+  color:#EFA654;
+  padding-left:20px;
+  padding-right:20px;
+  padding-top:10px;
+  padding-bottom:10px;
+  border-radius:20px;
+  left:70px;
+  position:absolute;
+  cursor:pointer;
+  transition:all 0.3s ease;
+}
+
+.card-1 a:hover{
+  transform:scale(1.1);
+}
+.card-2{
+  background:#132A0D;
+  width:550px;
+  height:300px;
+  display:flex;
+  border-top-right-radius:150px;
+  border-bottom-right-radius:150px;
+  border-top-left-radius:50px;
+  border-bottom-left-radius:50px;
+  position:relative;
+}
+
+.card-2 img{
+  background-size:cover;
+  height:350px;
+  position:absolute;
+  bottom:-75px;
+  left:335px
+}
+
+.card-2 a{
+  background:#31442B;
+  border:#EFA654 solid 2px;
+  color:#EFA654;
+  padding-left:20px;
+  padding-right:20px;
+  padding-top:10px;
+  padding-bottom:10px;
+  border-radius:20px;
+  left:70px;
+  position:absolute;
+  cursor:pointer;
+  transition:all 0.3s ease;
+
+}
+
+.card-2 a:hover{
+  transform:scale(1.1);
+}
+
+.photos{
+  padding:50px;
+
+}
+
+.sign-up-contribute-container{
+  background:#2D462B;
+  border:#EFA654 solid 2px;
+  padding:30px;
+  border-radius:15px;
+  position:relative;
+  margin-top:50px;
+}
+
+.sign-up-contribute-container span{
+  color:#D9D095;
+  font-weight:bold;
+  font-size:30px;
+}
+
+.sign-up-contribute-container a{
+  color:#D9D095;
+  border:#EFA654 solid 2px;
+  font-size:20px;
+  padding:20px;
+  border-radius:35px;
+  margin-bottom:20px;
+  position:absolute;
+  top:30px;
+  right:35px;
+}
+
+
+.tips{
+  padding:50px;
+
+}
+
+.compass{
+  background:#15290D;
+  position:relative;
+  width:100%;
+  max-width:500px;
+  padding:10px;
+  border-radius:15px;
+  margin-top:80px;
+  
+
+}
+
+.compass h1,
+.compass p{
+  display:inline-block;
+  color:#ffff;
+ 
+}
+
+.compass h1{
+  font-size:25px;
+
+}
+
+.compass p{
+  font-size:20px;
+  margin-top:10px;
+}
+
+.user-icon{
+  display:flex;
+  align-items:center;
+}
+
+.user-icon img{
+  margin-right:15px;
+  margin-left:90px;
+
+}
+
+.user-icon span{
+  color:#EFA654;
+  font-weight:bold;
+}
+
+.camera{
+  background:#15290D;
+  position:relative;
+  width:100%;
+  max-width:500px;
+  padding:10px;
+  border-radius:15px;
+  margin-top:40px;
+  
+
+}
+
+.camera h1,
+.camera p{
+  display:inline-block;
+  color:#ffff;
+ 
+}
+
+.camera h1{
+  font-size:25px;
+
+}
+
+.camera p{
+  font-size:20px;
+  margin-top:10px;
+}
+
+.tag-filled{
+  background:#15290D;
+  position:relative;
+  width:100%;
+  max-width:500px;
+  padding:20px;
+  border-radius:15px;
+  margin-top:40px;
+  
+
+}
+
+.tag-filled h1,
+.tag-filled p{
+  display:inline-block;
+  color:#ffff;
+ 
+}
+
+.tag-filled h1{
+  font-size:25px;
+
+}
+
+.tag-filled p{
+  font-size:20px;
+  margin-top:10px;
+}
+
+
+/*sectio-b*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*form-modal*/
+.login-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.login-modal-content {
+  background: linear-gradient(135deg, rgba(41, 67, 42, 0.95), rgba(27, 94, 32, 0.95));
+  margin: 5% auto;
+  padding: 0;
+  border: 2px solid #F2994A;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  animation: slideIn 0.3s ease-in-out;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.login-modal-header {
+  text-align: center;
+  padding: 20px 20px 10px;
+  border-bottom: 1px solid rgba(242, 201, 76, 0.3);
+  position: relative;
+}
+
+.close-modal {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color: #F2C94C;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.close-modal:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+.modal-logo {
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+.login-modal-header h2 {
+  color: #F2C94C;
+  font-size: 20px;
+  margin: 0;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
+}
+
+.login-modal-form {
+  padding: 20px 30px 30px;
+}
+
+.login-modal-form .input-group {
+  display: flex;
+  align-items: center;
+  border: 2px solid #0b661d;
+  border-radius: 10px;
+  padding: 12px;
+  margin: 15px 0;
+  background: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+}
+
+.login-modal-form .input-group:focus-within {
+  border-color: #F2994A;
+  box-shadow: 0 0 10px rgba(242, 153, 74, 0.3);
+}
+
+.login-modal-form .input-group i {
+  color: #66500B;
+  margin-right: 12px;
+  font-size: 16px;
+}
+
+.login-modal-form .input-group input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+  background: transparent;
+  color: #333;
+}
+
+.login-modal-form .options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  margin: 15px 0;
+}
+
+.login-modal-form .options label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #F2C94C;
+  cursor: pointer;
+}
+
+.login-modal-form .options input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  accent-color: #F2994A;
+  cursor: pointer;
+}
+
+.login-modal-form .options a {
+  text-decoration: none;
+  color: #F2C94C;
+  transition: color 0.3s ease;
+}
+
+.login-modal-form .options a:hover {
+  color: white;
+}
+
+.login-modal-form .login-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #1e4d2b, #2B662E);
+  color: #F2C94C;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 20px 0;
+  border: 2px solid #F2994A;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.login-modal-form .login-btn:hover {
+  background: linear-gradient(135deg, #F2994A, #F2C94C);
+  color: #1e4d2b;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(242, 153, 74, 0.4);
+}
+
+.login-modal-form .continue {
+  text-align: center;
+  margin: 20px 0 10px;
+  font-size: 13px;
+  color: #F2C94C;
+}
+
+.login-modal-form .social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.login-modal-form .social i {
+  font-size: 20px;
+  color: white;
+  width: 45px;
+  height: 45px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1e4d2b, #2B662E);
+  border: 2px solid #F2994A;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-modal-form .social i:hover {
+  background: linear-gradient(135deg, #F2994A, #F2C94C);
+  color: #1e4d2b;
+  transform: scale(1.1);
+}
+
+.login-modal-form .signup {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 20px;
+  color: #F2C94C;
+}
+
+.login-modal-form .signup a {
+  color: #F2994A;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.login-modal-form .signup a:hover {
+  color: white;
+  text-shadow: 0 0 5px rgba(242, 201, 76, 0.5);
+}
+
+/* Modal Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Modal */
+@media (max-width: 768px) {
+  .login-modal-content {
+    width: 95%;
+    margin: 10% auto;
+  }
+  
+  .register-modal-content {
+    width: 95%;
+    margin: 10% auto;
+  }
+  
+  .login-modal-form {
+    padding: 15px 20px 25px;
+  }
+  
+  .register-modal-form {
+    padding: 15px 20px 25px;
+  }
+  
+  .modal-logo {
+    width: 100px;
+  }
+  
+  .login-modal-header h2 {
+    font-size: 18px;
+  }
+  
+  .register-modal-header h2 {
+    font-size: 18px;
+  }
+}
+
+/* Register Modal Specific Styles */
+.register-modal-content {
+  background: linear-gradient(135deg, rgba(41, 67, 42, 0.95), rgba(27, 94, 32, 0.95));
+  margin: 5% auto;
+  padding: 0;
+  border: 2px solid #F2994A;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 420px;
+  position: relative;
+  animation: slideIn 0.3s ease-in-out;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.register-modal-header {
+  text-align: center;
+  padding: 20px 20px 10px;
+  border-bottom: 1px solid rgba(242, 201, 76, 0.3);
+  position: relative;
+}
+
+.close-register-modal {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color: #F2C94C;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.close-register-modal:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+.register-modal-header h2 {
+  color: #F2C94C;
+  font-size: 20px;
+  margin: 0;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
+}
+
+.register-modal-form {
+  padding: 20px 30px 30px;
+}
+
+.register-modal-form .input-group {
+  display: flex;
+  align-items: center;
+  border: 2px solid #0b661d;
+  border-radius: 10px;
+  padding: 12px;
+  margin: 12px 0;
+  background: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+}
+
+.register-modal-form .input-group:focus-within {
+  border-color: #F2994A;
+  box-shadow: 0 0 10px rgba(242, 153, 74, 0.3);
+}
+
+.register-modal-form .input-group i {
+  color: #66500B;
+  margin-right: 12px;
+  font-size: 16px;
+}
+
+.register-modal-form .input-group input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+  background: transparent;
+  color: #333;
+}
+
+.register-modal-form .terms {
+  font-size: 12px;
+  color: #F2C94C;
+  margin: 15px 0;
+  text-align: left;
+}
+
+.register-modal-form .terms label {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  cursor: pointer;
+  line-height: 1.4;
+}
+
+.register-modal-form .terms input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  accent-color: #F2994A;
+  cursor: pointer;
+  margin-top: 2px;
+}
+
+.register-modal-form .terms span {
+  color: #F2994A;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: rgba(242, 153, 74, 0.5);
+}
+
+.register-modal-form .signup-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #1e4d2b, #2B662E);
+  color: #F2C94C;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 20px 0;
+  border: 2px solid #F2994A;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.register-modal-form .signup-btn:hover {
+  background: linear-gradient(135deg, #F2994A, #F2C94C);
+  color: #1e4d2b;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(242, 153, 74, 0.4);
+}
+
+.register-modal-form .continue {
+  text-align: center;
+  margin: 20px 0 10px;
+  font-size: 13px;
+  color: #F2C94C;
+}
+
+.register-modal-form .social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.register-modal-form .social i {
+  font-size: 20px;
+  color: white;
+  width: 45px;
+  height: 45px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1e4d2b, #2B662E);
+  border: 2px solid #F2994A;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.register-modal-form .social i:hover {
+  background: linear-gradient(135deg, #F2994A, #F2C94C);
+  color: #1e4d2b;
+  transform: scale(1.1);
+}
+
+.register-modal-form .signin {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 20px;
+  color: #F2C94C;
+}
+
+.register-modal-form .signin a {
+  color: #F2994A;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.register-modal-form .signin a:hover {
+  color: white;
+  text-shadow: 0 0 5px rgba(242, 201, 76, 0.5);
+}
