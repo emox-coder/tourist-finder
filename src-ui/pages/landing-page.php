@@ -1,41 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="Discover your next adventure with Tourist Attraction Finder. Explore top destinations, curated travel packages, and hidden gems. Plan unforgettable journeys with local expertise.">
-        <title>Tourist Attraction Finder - Discover Your Next Adventure</title>
-        <link rel="stylesheet" href="assets/css/landing-page.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <link rel="icon" type="image/png" href="../assets/img/favicon.png">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         
-    </head>
+
+<head>
+    <?php include '../includes/head.php'; ?>
+    <title>Tourist Attraction Finder - Discover Your Next Adventure</title>
+    <link rel="stylesheet" href="../assets/css/landing-page.css">
+</head>
+DAAD
+sdvdv
 <body>
     <div class="background">
-
-    <!--header-->
-       <div data-aos="fade-down" data-aos-duration="1500" data-aos-delay="300" class="container">
-            <div class="logo">
-                <img src="../assets/img/logo.png">
-            </div>
-            <div class="search-home-container">
-                <ul>
-                    <a href="landing-page.php" class="nav-link active">Home</a>
-                    <a href="packages.php" class="nav-link">Packages</a>
-                    <a href="community.php" class="nav-link">Community</a>
-                    <a href="about.php" class="nav-link">About</a>
-                </ul>
-            </div>
-            <div class="signin-button">
-                <a href="dashboard.php" id="loginModalBtn">Get Started</a>
-            </div>
-       </div>
-    <!--header-->
-       <div class="container2">
+        <?php include '../includes/header.php'; ?>
+        
+        <div class="container2">
             <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300" class="discover-explore">
                 <h1>Discover your <br>
                     next adventure
@@ -51,7 +28,7 @@
                 <img class="yellow-car" src="../assets/img/yellow-car.png">
                 <img class="falls" src="../assets/img/falls.png">
             </div>
-       </div>
+        </div>
     </div>
     <div class="top-destinations-container">
         <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="300" class="background-top-destinations">
@@ -67,15 +44,17 @@
         </div>
     </div>
 
-    <div id="top-destinations-cards" data-aos="fade-up" data-aos-duration="600" data-aos-delay="700" class="top-destinations-cards-container"></div>
-   
+    <div id="top-destinations-cards" data-aos="fade-up" data-aos-duration="600" data-aos-delay="700"
+        class="top-destinations-cards-container"></div>
+
     <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="900" class="click-to-see-more-container">
         <div>
             <h1>How can i help your journey</h1>
         </div>
     </div>
 
-    <div id="three-cards" data-aos="fade-up" data-aos-duration="600" data-aos-delay="1100" class="three-cards-container"></div>
+    <div id="three-cards" data-aos="fade-up" data-aos-duration="600" data-aos-delay="1100"
+        class="three-cards-container"></div>
 
     <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="1200" class="click-container">
         <div>
@@ -83,7 +62,8 @@
         </div>
     </div>
 
-    <h1 data-aos="fade-up" data-aos-duration="600" data-aos-delay="1500" class="explorer">Explorer’s Stories & Social Proof</h1>
+    <h1 data-aos="fade-up" data-aos-duration="600" data-aos-delay="1500" class="explorer">Explorer’s Stories & Social
+        Proof</h1>
 
     <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="1600" class="collage-container">
         <div class="first-row-container">
@@ -94,7 +74,7 @@
                 <img src="../assets/img/cave.png">
             </div>
         </div>
-        
+
         <div class="second-row-container">
             <div class="second-row-div1">
                 <img src="../assets/img/diver.png">
@@ -145,32 +125,7 @@
         <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
         <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
     </div>
-    
-    <div class="all-rights-reserved">
-        <div>
-            <p style="color:#F2C94C;
-            font-weight:bold;
-            margin-top:20px">@Tourist Attraction Finder</p>
-            <p style="color:white;
-            margin-top:40px">2026 TAF. All rights reserved. l Terms & Conditions I Privacy Policy</p>
-        </div>
-    </div>
 
-    <script src="../assets/js/app.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-        document.querySelectorAll('.smooth-link').forEach(link => {
-        link.addEventListener('click', function(e) {
-        e.preventDefault(); 
-        document.body.classList.add('fade-out');
-        setTimeout(() => {
-        window.location.href = this.href; 
-        }, 500); 
-    });
-    });
-</script>
-    
-
-</body>    
+    <?php include '../includes/footer.php'; ?>
+</body>
 </html>

@@ -3,7 +3,9 @@ namespace Infrastructure\Repositories;
 
 use Infrastructure\Database\Database;
 
-class AttractionRepositoryImpl {
+use App\Repositories\AttractionRepository;
+
+class AttractionRepositoryImpl implements AttractionRepository {
     private $conn;
 
     public function __construct() {

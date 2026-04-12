@@ -3,7 +3,9 @@ namespace Infrastructure\Repositories;
 
 use Infrastructure\Database\Database;
 
-class AdminRepositoryImpl {
+use App\Repositories\AdminRepository;
+
+class AdminRepositoryImpl implements AdminRepository {
     private $conn;
 
     public function __construct() {

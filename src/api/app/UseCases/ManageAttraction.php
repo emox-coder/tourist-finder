@@ -3,11 +3,13 @@ namespace App\UseCases;
 
 use Infrastructure\Repositories\AttractionRepositoryImpl;
 
+use App\Repositories\AttractionRepository;
+
 class ManageAttraction {
     private $repo;
 
-    public function __construct() {
-        $this->repo = new AttractionRepositoryImpl();
+    public function __construct(AttractionRepository $repo) {
+        $this->repo = $repo;
     }
 
     public function create($data) {

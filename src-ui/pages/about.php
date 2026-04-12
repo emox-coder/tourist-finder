@@ -2,38 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="description"
-        content="Learn about Tourist Attraction Finder - our story, mission, and the team behind the platform. Discover how we help travelers find authentic experiences and hidden gems beyond the typical tourist path.">
+    <?php include '../includes/head.php'; ?>
     <title>Tourist Attraction Finder - About Us</title>
     <link rel="stylesheet" href="../assets/css/about.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <!--header-->
     <div class="content-1">
-        <div data-aos="fade-down" data-aos-duration="1500" data-aos-delay="300" class="container">
-            <div class="logo">
-                <img src="../assets/img/logo.png">
-            </div>
-            <div class="search-home-container">
-                <ul>
-                    <a href="landing-page.php" class="nav-link">Home</a>
-                    <a href="packages.php" class="nav-link">Packages</a>
-                    <a href="community.php" class="nav-link">Community</a>
-                    <a href="about.php" class="nav-link-active">About</a>
-                </ul>
-            </div>
-            <div class="signin-button">
-                <a href="dashboard.php" id="loginModalBtn">Get Started</a>
-            </div>
-        </div>
+        <?php include '../includes/header.php'; ?>
 
         <div class="our-story">
             <div class="our-story-text">
@@ -93,8 +68,6 @@
                     </div>
                 </div>
             </div>
-
-
 
             <div class="contact-us-container">
                 <div class="container1">
@@ -180,22 +153,6 @@
         </div>
     </div>
 
-    <script src="../assets/js/app.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-        document.querySelectorAll('.smooth-link').forEach(link => {
-            link.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.body.classList.add('fade-out');
-                setTimeout(() => {
-                    window.location.href = this.href;
-                }, 500);
-            });
-        });
-    </script>
-
-
+    <?php include '../includes/footer.php'; ?>
 </body>
-
 </html>

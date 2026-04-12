@@ -3,11 +3,13 @@ namespace App\UseCases;
 
 use Infrastructure\Repositories\AdminRepositoryImpl;
 
+use App\Repositories\AdminRepository;
+
 class ManageAdmin {
     private $repo;
 
-    public function __construct() {
-        $this->repo = new AdminRepositoryImpl();
+    public function __construct(AdminRepository $repo) {
+        $this->repo = $repo;
     }
 
     public function getAllAdmins() {

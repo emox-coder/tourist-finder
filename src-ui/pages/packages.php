@@ -1,42 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="Explore curated travel packages from Tourist Attraction Finder. Choose from Adventure, Budget, and Family packages designed for unforgettable experiences.">
-        <title>Tourist Attraction Finder - Travel Packages</title>
-        <link rel="stylesheet" href="assets/css/packages.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <link rel="icon" type="image/png" href="../assets/img/favicon.png">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         
-    </head>
+<head>
+    <?php include '../includes/head.php'; ?>
+    <title>Tourist Attraction Finder - Travel Packages</title>
+    <link rel="stylesheet" href="../assets/css/packages.css">
+</head>
 <body>
-    <!--header-->
     <div class="background">
-       <div data-aos="fade-down" data-aos-duration="1500" data-aos-delay="300" class="container">
-            <div class="logo">
-                <img src="../assets/img/logo.png">
-            </div>
-            <div class="search-home-container">
-                <ul>
-                    <a href="landing-page.php" class="nav-link">Home</a>
-                    <a href="packages.php" class="nav-link active">Packages</a>
-                    <a href="community.php" class="nav-link">Community</a>
-                    <a href="about.php" class="nav-link">About</a>
-                </ul>
-            </div>
-            <div class="signin-button">
-                <a href="../src-ui/pages/dashboard.php" id="loginModalBtn">Get Started</a>
-            </div>
-       </div>
-     <!--header-->
-
-     <!--main section-->
-        <div  data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300" class="packages-container">
+        <?php include '../includes/header.php'; ?>
+        
+        <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300" class="packages-container">
             <div>
                 <h1>Curated Travel Packages</h1>
                 <h3>Don't just visit. Experience.</h3>
@@ -48,10 +21,10 @@
     </div>
     
     <div class="Section-a">
-        <div  data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500" class="right-content">
+        <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500" class="right-content">
             <img src="../assets/img/adventure.png">
         </div>
-        <div  data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700" class="left-content">
+        <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700" class="left-content">
             <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="900">
                 <img class="vector" src="../assets/img/vector.png">
                 <h1>Adventure</h1>
@@ -81,12 +54,11 @@
         </div>
     </div>
 
-
     <div class="Section-b">
-        <div  data-aos="fade-left" data-aos-duration="1500" data-aos-delay="900" class="right-content">
+        <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="900" class="right-content">
             <img src="../assets/img/foods.png">
         </div>
-        <div  data-aos="fade-right" data-aos-duration="600" data-aos-delay="1100" class="left-content">
+        <div data-aos="fade-right" data-aos-duration="600" data-aos-delay="1100" class="left-content">
             <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="1200">
                 <img class="vector" src="../assets/img/budget.png">
                 <h1>Budget</h1>
@@ -118,10 +90,10 @@
     </div>
 
     <div class="Section-c">
-        <div  data-aos="fade-right" data-aos-duration="600" data-aos-delay="1300" class="right-content">
+        <div data-aos="fade-right" data-aos-duration="600" data-aos-delay="1300" class="right-content">
             <img src="../assets/img/familys.png">
         </div>
-        <div  data-aos="fade-left" data-aos-duration="600" data-aos-delay="1500" class="left-content">
+        <div data-aos="fade-left" data-aos-duration="600" data-aos-delay="1500" class="left-content">
             <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="1600">
                 <img class="vector" src="../assets/img/family-icon.png">
                 <h1>Family</h1>
@@ -151,25 +123,7 @@
             </div>
         </div>
     </div>
-    <!--main section-->
-    
 
-
-   <script src="../assets/js/app.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-        document.querySelectorAll('.smooth-link').forEach(link => {
-        link.addEventListener('click', function(e) {
-        e.preventDefault(); 
-        document.body.classList.add('fade-out');
-        setTimeout(() => {
-        window.location.href = this.href; 
-        }, 500); 
-    });
-    });
-</script>
-    
-
-</body>    
+    <?php include '../includes/footer.php'; ?>
+</body>
 </html>

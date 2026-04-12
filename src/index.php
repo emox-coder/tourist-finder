@@ -2,5 +2,5 @@
 /**
  * Main Entry Point - Redirect to Landing Page
  */
-header('Location: ./pages/landing-page.php');
+header('Location: ../src-ui/pages/landing-page.php');
 exit;

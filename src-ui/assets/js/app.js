@@ -4,7 +4,7 @@ let allDestinations = [];
 let currentCategory = 'all';
 
 // Fetch top destinations cards
-fetch('../Backend/routes/api.php?uri=/api/top-destinations')
+fetch('../../../src/api/routes/api.php?uri=/api/top-destinations')
   .then(async res => {
     if (!res.ok) {
       throw new Error(`HTTP ${res.status}: ${res.statusText}`);
@@ -150,7 +150,7 @@ function setupCategoryButtons() {
 }
 
 // Fetch three cards
-fetch('../Backend/routes/api.php?uri=/api/three-cards')
+fetch('../../../src/api/routes/api.php?uri=/api/three-cards')
   .then(async res => {
     if (!res.ok) {
       throw new Error(`HTTP ${res.status}: ${res.statusText}`);
