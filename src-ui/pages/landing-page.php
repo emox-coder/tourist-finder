@@ -2,12 +2,10 @@
 <html lang="en">
 
 <head>
-    <?php include '../includes/head.php'; ?>
+    <?php include '../includes/head.html'; ?>
     <title>Tourist Attraction Finder - Discover Your Next Adventure</title>
     <link rel="stylesheet" href="../assets/css/landing-page.css">
 </head>
-DAAD
-sdvdv
 <body>
     <div class="background">
         <?php include '../includes/header.php'; ?>
@@ -105,7 +103,7 @@ sdvdv
     </div>
 
     <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="1900" class="quick-contacts-container">
-        <div class>
+        <div>
             <h1 style="color:white">Quick Links</h1>
             <p>About Us</p>
             <p>Blog</p>
@@ -126,6 +124,6 @@ sdvdv
         <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
     </div>
 
-    <?php include '../includes/footer.php'; ?>
+    <?php include '../includes/footer.html'; ?>
 </body>
 </html>

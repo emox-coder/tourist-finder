@@ -120,4 +120,4 @@ include 'includes/header.php';
 </div>
 
 <script src="../assets/js/admin-top-destinations.js"></script>
-<?php include 'includes/footer.php'; ?>
+<?php include 'includes/footer.html'; ?>

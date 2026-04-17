@@ -204,7 +204,7 @@ header {
   box-sizing: border-box;
 }
 
-content {
+.content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
@@ -214,20 +214,20 @@ content {
 
 /* Responsive breakpoints */
 @media (max-width: 1200px) {
-  content {
+  .content {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 900px) {
-  content {
+  .content {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
 }
 
 @media (max-width: 600px) {
-  content {
+  .content {
     grid-template-columns: 1fr;
     gap: 15px;
   }

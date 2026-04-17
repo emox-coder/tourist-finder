@@ -153,4 +153,4 @@ include 'includes/header.php';
 </div>
 
 <script src="../assets/js/admin-attractions.js"></script>
-<?php include 'includes/footer.php'; ?>
+<?php include 'includes/footer.html'; ?>

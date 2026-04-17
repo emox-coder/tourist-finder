@@ -115,4 +115,4 @@ include 'includes/header.php';
 </style>
 
 <script src="../assets/js/admin-three-cards.js"></script>
-<?php include 'includes/footer.php'; ?>
+<?php include 'includes/footer.html'; ?>

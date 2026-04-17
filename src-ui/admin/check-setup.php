@@ -230,7 +230,7 @@
         echo "<div class='actions'>";
         if ($allOk) {
             echo "<p style='color: #28a745; margin-bottom: 15px;'><strong>✓ All checks passed! Your admin dashboard is ready.</strong></p>";
-            echo "<a href='login.php' class='btn btn-primary'>Go to Login Page</a>";
+            echo "<a href='login.html' class='btn btn-primary'>Go to Login Page</a>";
         } else {
             echo "<p style='color: #dc3545; margin-bottom: 15px;'><strong>✗ Some checks failed. Please fix the issues above.</strong></p>";
             echo "<a href='check-setup.php' class='btn btn-secondary'>Re-check</a>";

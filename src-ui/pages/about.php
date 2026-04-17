@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <?php include '../includes/head.php'; ?>
+    <?php include '../includes/head.html'; ?>
     <title>Tourist Attraction Finder - About Us</title>
     <link rel="stylesheet" href="../assets/css/about.css">
 </head>
@@ -153,6 +153,6 @@
         </div>
     </div>
 
-    <?php include '../includes/footer.php'; ?>
+    <?php include '../includes/footer.html'; ?>
 </body>
 </html>

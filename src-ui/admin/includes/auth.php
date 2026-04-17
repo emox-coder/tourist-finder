@@ -28,7 +28,7 @@ function isLoggedIn() {
 
 function requireLogin() {
     if (!isLoggedIn()) {
-        header("Location: login.php");
+        header("Location: login.html");
         exit;
     }
 }
@@ -51,7 +51,7 @@ function login($email, $password) {
 
 function logout() {
     session_destroy();
-    header("Location: login.php");
+    header("Location: login.html");
     exit;
 }
 

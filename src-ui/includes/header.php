@@ -15,7 +15,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
         </ul>
     </div>
     <div class="signin-button">
-        <a href="dashboard.php" id="loginModalBtn">Get Started</a>
+        <a href="dashboard.html" id="loginModalBtn">Get Started</a>
     </div>
 </div>
 <!--header-->
